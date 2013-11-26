@@ -5,4 +5,5 @@ class common {
     packages   => 'mcollective*',
     codename   => $::lsbdistcodename,
   }
+  package { 'curl': ensure => 'present' }
 }
